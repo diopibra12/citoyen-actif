@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/municipale">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="611dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/first_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Entrez votre prénom"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@id/text" />
+
+            <EditText
+                android:id="@+id/last_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Entrez votre nom"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@id/first_Name" />
+
+            <EditText
+                android:id="@+id/homeAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Entrez votre adresse domicile"
+                android:inputType="textPostalAddress"
+                android:maxLines="2"
+                app:layout_constraintTop_toBottomOf="@id/last_Name" />
+
+            <EditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Entrez votre numéro de téléphone"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@id/homeAddressEditText" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Entrez votre courriel"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@id/phoneNumberEditText" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Entrez votre mot de passe"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@id/emailEditText" />
+
+            <!--     Agents       -->
+            <EditText
+                android:id="@+id/numero_agent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Numéro d'agent"
+                android:inputType="text"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@id/first_Name"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/ville"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Ville"
+                android:inputType="text"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@id/numero_agent"
+                android:visibility="gone" />
+
+            <Switch
+                android:id="@+id/agentIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Est un agent?" />
+
+            <Button
+                android:id="@+id/btn_inscrire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="S'inscrire"
+                app:layout_constraintTop_toBottomOf="@id/password" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

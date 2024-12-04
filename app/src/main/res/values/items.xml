@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="report_categories">
+        <item>Infrastructure</item>
+        <item>Voirie</item>
+        <item>Éclairage Public</item>
+        <item>Espaces Verts</item>
+        <!-- Ajoutez d'autres catégories selon vos besoins -->
+    </string-array>
+</resources>
